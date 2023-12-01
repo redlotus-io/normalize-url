@@ -1,6 +1,6 @@
 {
 	"name": "@redlotus/normalize-url",
-	"version": "1.0.1",
+	"version": "1.0.0",
 	"description": "Normalize a URL",
 	"license": "MIT",
 	"exports": {
