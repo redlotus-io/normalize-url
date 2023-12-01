@@ -1,3 +1,8 @@
+![RedLotus-Logo-Dark](.github/base-logo-dark-mode.svg#gh-dark-mode-only)
+![RedLotus-Logo-Light](.github/base-logo-light-mode.svg#gh-light-mode-only)
+
+## Redlotus fork for adding CommonJS support
+
 # normalize-url [![Coverage Status](https://codecov.io/gh/sindresorhus/normalize-url/branch/main/graph/badge.svg)](https://codecov.io/gh/sindresorhus/normalize-url)
 
 > [Normalize](https://en.wikipedia.org/wiki/URL_normalization) a URL
@@ -9,13 +14,15 @@ Useful when you need to display, store, deduplicate, sort, compare, etc, URLs.
 ## Install
 
 ```sh
-npm install normalize-url
+npm install @redlotus/normalize-url
+
+yarn add @redlotus/normalize-url
 ```
 
 ## Usage
 
 ```js
-import normalizeUrl from 'normalize-url';
+import { normalizeUrl } from 'normalize-url';
 
 normalizeUrl('sindresorhus.com');
 //=> 'http://sindresorhus.com'

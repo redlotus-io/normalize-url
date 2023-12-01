@@ -1,30 +1,24 @@
 {
-	"name": "normalize-url",
-	"version": "8.0.0",
+	"name": "@redlotus/normalize-url",
+	"version": "1.0.0",
 	"description": "Normalize a URL",
 	"license": "MIT",
-	"repository": "sindresorhus/normalize-url",
-	"funding": "https://github.com/sponsors/sindresorhus",
-	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "https://sindresorhus.com"
-	},
-	"type": "module",
 	"exports": {
-		"types": "./index.d.ts",
-		"default": "./index.js"
-	},
+    	"./package.json": "./package.json",
+    	".": "./dist/index.js"
+  	},
+  	"types": "dist/index.d.ts",
 	"engines": {
-		"node": ">=14.16"
+		"node": ">=18"
 	},
 	"scripts": {
-		"test": "xo && c8 ava && tsd"
+		"build": "tsc",
+		"test": "ava && tsd"
 	},
-	"files": [
-		"index.js",
-		"index.d.ts"
-	],
+  	"files": [
+  	  "dist/index.js",
+  	  "dist/index.d.ts"
+  	],
 	"keywords": [
 		"normalize",
 		"url",
@@ -44,7 +38,12 @@
 		"ava": "^5.0.1",
 		"c8": "^7.12.0",
 		"tsd": "^0.24.1",
-		"xo": "^0.52.4"
+		"@redlotus/typescript-config": "^1.0.0",
+		"@types/node": "^20.10.1",
+		"@types/url-regex-safe": "^1.0.2",
+		"eslint-config-redlotus-base": "^0.2.1",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.3.2"
 	},
 	"c8": {
 		"reporter": [
